@@ -24,6 +24,7 @@ import java.util.Set;
 
 public class InducedSubgraphProperty implements GraphProperty {
 
+
     // Возвращает хэш‑представление ребра. Для ненаправленного графа порядок
     // вершин упорядочивается, чтобы (u,v) == (v,u).
     private static long edgeKey(int u, int v, boolean directed) {
