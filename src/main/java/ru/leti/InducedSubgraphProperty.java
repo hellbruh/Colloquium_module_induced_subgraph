@@ -22,8 +22,13 @@ import java.util.Set;
  * Время O(|V_s| + |E_o| + |E_s|)
  **/
 
-public class InducedSubgraphProperty implements GraphProperty {
+public abstract class InducedSubgraphProperty implements GraphProperty {
 
+    private final Graph original;
+
+    public InducedSubgraphProperty(Graph original) {
+        this.original = original;
+    }
 
     // Возвращает хэш‑представление ребра. Для ненаправленного графа порядок
     // вершин упорядочивается, чтобы (u,v) == (v,u).
@@ -35,7 +40,7 @@ public class InducedSubgraphProperty implements GraphProperty {
     }
 
     @Override
-    public boolean run(Graph original, Graph subgraph) {
+    public boolean run(Graph subgraph) {
         if (original.isDirect() != subgraph.isDirect()) {
             return false;
         }
