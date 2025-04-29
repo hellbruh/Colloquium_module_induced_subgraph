@@ -22,7 +22,7 @@ import java.util.Set;
  * Время O(|V_s| + |E_o| + |E_s|)
  **/
 
-public abstract class InducedSubgraphProperty implements GraphProperty {
+public class InducedSubgraphProperty implements GraphProperty {
 
     private final Graph original;
 
