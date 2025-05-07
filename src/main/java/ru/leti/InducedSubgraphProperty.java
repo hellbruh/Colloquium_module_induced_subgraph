@@ -4,6 +4,7 @@ import ru.leti.wise.task.plugin.graph.GraphProperty;
 import ru.leti.wise.task.graph.model.Graph;
 import ru.leti.wise.task.graph.model.Vertex;
 import ru.leti.wise.task.graph.model.Edge;
+import ru.leti.wise.task.graph.model.Color;        // ← добавили импорт цвета
 
 import java.util.HashSet;
 //import java.util.List;
@@ -13,7 +14,7 @@ import java.util.Set;
  * Проверяет, что subgraph является индуцированным подграфом
  * исходного  original по  множеству вершин из подграфа.
  * Алгоритм
- * 1 Собираем Id‑шники вершин из  subgraph.
+ * 1 Собираем Id-шники вершин из  subgraph.
  * 2 Проходим по рёбрам original; если оба конца лежат в множестве,
  *   формируем «ключ» ребра (учитывая направленность) и добавляем его в expected.
  * 3 Собираем аналогичный набор «ключей» из subgraph - actual.
@@ -30,7 +31,7 @@ public class InducedSubgraphProperty implements GraphProperty {
         this.original = original;
     }
 
-    // Возвращает хэш‑представление ребра. Для ненаправленного графа порядок
+    // Возвращает хэш-представление ребра. Для ненаправленного графа порядок
     // вершин упорядочивается, чтобы (u,v) == (v,u).
     private static long edgeKey(int u, int v, boolean directed) {
         if (!directed && v < u) {
@@ -68,7 +69,17 @@ public class InducedSubgraphProperty implements GraphProperty {
             actual.add(edgeKey(e.getSource(), e.getTarget(), directed));
         }
 
-        return expected.equals(actual);
+        //проверка равенства наборов рёбер графа и подграфа между вершинами подграфа
+        boolean isInduced = expected.equals(actual);
+        //если подграф является порожденным (=индуцированным) графа, то ребра подграфа подсвечиваются в оригинальном графе красным
+        if (isInduced) {
+            for (Edge e : original.getEdgeList()) {
+                if (verts.contains(e.getSource()) && verts.contains(e.getTarget())) {
+                    e.setColor(Color.RED);      // отмечаем ребро красным
+                }
+            }
+        }
+
+        return isInduced;
     }
 }
-
