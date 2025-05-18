@@ -1,6 +1,5 @@
-package ru.leti;
 
-import ru.leti.wise.task.plugin.graph.GraphProperty;
+import ru.leti.wise.task.plugin.graph.NewGraphConstruction;
 import ru.leti.wise.task.graph.model.Graph;
 import ru.leti.wise.task.graph.model.Vertex;
 import ru.leti.wise.task.graph.model.Edge;
@@ -23,13 +22,7 @@ import java.util.Set;
  * Время O(|V_s| + |E_o| + |E_s|)
  **/
 
-public class InducedSubgraphProperty implements GraphProperty {
-
-    private final Graph original;
-
-    public InducedSubgraphProperty(Graph original) {
-        this.original = original;
-    }
+public class InducedSubgraphProperty implements NewGraphConstruction {
 
     // Возвращает хэш-представление ребра. Для ненаправленного графа порядок
     // вершин упорядочивается, чтобы (u,v) == (v,u).
@@ -41,7 +34,7 @@ public class InducedSubgraphProperty implements GraphProperty {
     }
 
     @Override
-    public boolean run(Graph subgraph) {
+    public boolean run(Graph original, Graph subgraph) {
         if (original.isDirect() != subgraph.isDirect()) {
             return false;
         }

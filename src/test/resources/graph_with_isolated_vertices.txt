@@ -1,0 +1,110 @@
+{
+  "edgeCount": 5,
+  "edgeList": [
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 23692,
+      "target": 21660,
+      "weight": 0
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 26797,
+      "target": 23692,
+      "weight": 0
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 26797,
+      "target": 21660,
+      "weight": 0
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 36516,
+      "target": 33740,
+      "weight": 0
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 21660,
+      "target": 33740,
+      "weight": 0
+    }
+  ],
+  "id": "28973024-c193-400d-8781-aeab287eb088",
+  "isDirect": false,
+  "isNamed": false,
+  "vertexCount": 8,
+  "vertexList": [
+    {
+      "color": "GRAY",
+      "id": 21660,
+      "label": "1",
+      "weight": 0,
+      "xCoordinate": 314,
+      "yCoordinate": 109
+    },
+    {
+      "color": "GRAY",
+      "id": 23692,
+      "label": "2",
+      "weight": 0,
+      "xCoordinate": 492,
+      "yCoordinate": 234
+    },
+    {
+      "color": "GRAY",
+      "id": 26797,
+      "label": "3",
+      "weight": 0,
+      "xCoordinate": 584,
+      "yCoordinate": 426
+    },
+    {
+      "color": "GREEN",
+      "id": 29884,
+      "label": "4",
+      "weight": 0,
+      "xCoordinate": 473,
+      "yCoordinate": 632
+    },
+    {
+      "color": "GREEN",
+      "id": 33740,
+      "label": "5",
+      "weight": 0,
+      "xCoordinate": 170,
+      "yCoordinate": 644
+    },
+    {
+      "color": "GREEN",
+      "id": 36516,
+      "label": "6",
+      "weight": 0,
+      "xCoordinate": -4,
+      "yCoordinate": 494
+    },
+    {
+      "color": "RED",
+      "id": 38956,
+      "label": "7",
+      "weight": 0,
+      "xCoordinate": -53,
+      "yCoordinate": 287
+    },
+    {
+      "color": "RED",
+      "id": 41284,
+      "label": "8",
+      "weight": 0,
+      "xCoordinate": 85,
+      "yCoordinate": 117
+    }
+  ]
+}

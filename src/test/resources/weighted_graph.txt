@@ -1,0 +1,115 @@
+{
+  "edgeCount": 8,
+  "edgeList": [
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 49724,
+      "target": 46197,
+      "weight": 5
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 52764,
+      "target": 49724,
+      "weight": 10
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 55403,
+      "target": 52764,
+      "weight": 15
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 57276,
+      "target": 55403,
+      "weight": 20
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 58587,
+      "target": 57276,
+      "weight": 25
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 46197,
+      "target": 58587,
+      "weight": 30
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 55403,
+      "target": 46197,
+      "weight": 35
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 58587,
+      "target": 52764,
+      "weight": 40
+    }
+  ],
+  "id": "f9e03f1e-776e-48b0-94ab-5770686157d4",
+  "isDirect": true,
+  "isNamed": false,
+  "vertexCount": 6,
+  "vertexList": [
+    {
+      "color": "GRAY",
+      "id": 46197,
+      "label": "1",
+      "weight": 0,
+      "xCoordinate": 248,
+      "yCoordinate": 79
+    },
+    {
+      "color": "GRAY",
+      "id": 49724,
+      "label": "2",
+      "weight": 0,
+      "xCoordinate": 460,
+      "yCoordinate": 234
+    },
+    {
+      "color": "GRAY",
+      "id": 52764,
+      "label": "3",
+      "weight": 0,
+      "xCoordinate": 434,
+      "yCoordinate": 440
+    },
+    {
+      "color": "GRAY",
+      "id": 55403,
+      "label": "4",
+      "weight": 0,
+      "xCoordinate": 202,
+      "yCoordinate": 558
+    },
+    {
+      "color": "GRAY",
+      "id": 57276,
+      "label": "5",
+      "weight": 0,
+      "xCoordinate": 0,
+      "yCoordinate": 406
+    },
+    {
+      "color": "GRAY",
+      "id": 58587,
+      "label": "6",
+      "weight": 0,
+      "xCoordinate": 20,
+      "yCoordinate": 214
+    }
+  ]
+}

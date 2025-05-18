@@ -1,0 +1,56 @@
+{
+  "edgeCount": 3,
+  "edgeList": [
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 77668,
+      "target": 71324,
+      "weight": 50
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 81652,
+      "target": 77668,
+      "weight": 100
+    },
+    {
+      "color": "GRAY",
+      "label": "",
+      "source": 81652,
+      "target": 71324,
+      "weight": 300
+    }
+  ],
+  "id": "ac427fed-130a-4d8f-b5d1-96c88ab25bba",
+  "isDirect": true,
+  "isNamed": false,
+  "vertexCount": 3,
+  "vertexList": [
+    {
+      "color": "GRAY",
+      "id": 71324,
+      "label": "1",
+      "weight": 0,
+      "xCoordinate": 235,
+      "yCoordinate": 56
+    },
+    {
+      "color": "RED",
+      "id": 77668,
+      "label": "2",
+      "weight": 0,
+      "xCoordinate": 561,
+      "yCoordinate": 211
+    },
+    {
+      "color": "BLUE",
+      "id": 81652,
+      "label": "3",
+      "weight": 0,
+      "xCoordinate": 409,
+      "yCoordinate": 471
+    }
+  ]
+}

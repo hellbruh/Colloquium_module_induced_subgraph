@@ -1,0 +1,9 @@
+{
+  "edgeCount": 0,
+  "edgeList": [],
+  "id": "dba4b0d2-cc78-4f53-857e-45d887ad7e28",
+  "isDirect": true,
+  "isNamed": false,
+  "vertexCount": 0,
+  "vertexList": []
+}
